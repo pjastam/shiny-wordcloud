@@ -21,7 +21,7 @@ Note that a prerequisite to the described workflow is that Docker must already b
 
 ## Usage
 
-This Shiny app runs at port 80. To run this Shiny app on your computer:
+This Shiny app runs on port 80. To run this Shiny app on your computer:
 
 ```sh
 docker run --rm -p 80:80 pjastam/shiny-wordcloud
@@ -29,7 +29,7 @@ docker run --rm -p 80:80 pjastam/shiny-wordcloud
 
 Now go to your webbrowser and enter http://127.0.0.1/, http://localhost or the IP address of your VPS to verify that the Shiny app is running.
 
-You can run the container at other ports. It can happen that there is some service running at PORT 80, as Apache or Nginx. To run the app at PORT 3838 for example, you can use:
+You can run the container on other ports. It can happen that there is some service running on port 80, as Apache or Nginx. To run the app on port 3838 for example, you can use:
 
 ``` r
 docker run --rm -p 3838:80 pjastam/shiny-wordcloud
@@ -39,4 +39,4 @@ Now go to your webbrowser and enter http://127.0.0.1:3838/, http://localhost:383
 
 ## IMPORTANT
 
-This project is not an alternative Shiny Server. It exposes PORT 80 (not 3838) and is intented to serve only single Shiny apps.
+This project is not an alternative Shiny Server. It exposes port 80 (not 3838) and is intented to serve only single Shiny apps.
