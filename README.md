@@ -19,6 +19,16 @@ docker build -t pjastam/shiny-wordcloud .
 
 Note that a prerequisite to the described workflow is that Docker must already be installed at your server.
 
+<h3>Docker Hub</h3>
+
+You might prefer the easiest way to run the Shiny app in a Docker container. To this end, I pushed a ready-to-use image to [Docker Hub](https://hub.docker.com/) which you can find [here](https://hub.docker.com/r/pjastam/shiny-wordcloud/). Enter the following commands in your Linux terminal and you're done:
+
+``` r
+docker pull pjastam/shiny-wordcloud
+```
+
+Note that a prerequisite to this workflow is that Docker must be installed.
+
 ## Usage
 
 This Shiny app runs on port 80. To run this Shiny app on your computer:
